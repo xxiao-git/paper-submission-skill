@@ -1,108 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 820" width="680" height="820" font-family="Segoe UI, Arial, sans-serif">
-  <!-- Background -->
-  <rect width="680" height="820" fill="#F5F7FA"/>
-
-  <!-- Legend -->
-  <rect x="10" y="10" width="155" height="120" rx="6" fill="#FFFFFF" stroke="#CCC" stroke-width="1"/>
-  <text x="87" y="30" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Legend (图例)</text>
-
-  <circle cx="35" cy="48" r="10" fill="#EF9F27" stroke="#854F0B" stroke-width="2"/>
-  <text x="52" y="52" font-size="10" fill="#333">人工审核节点 Checkpoint</text>
-
-  <rect x="22" y="62" width="26" height="18" rx="3" fill="#FAC775" stroke="#A07510"/>
-  <text x="52" y="75" font-size="10" fill="#333">分支/选择场景</text>
-
-  <rect x="22" y="86" width="26" height="18" rx="3" fill="#90D67C" stroke="#4A8C28"/>
-  <text x="52" y="99" font-size="10" fill="#333">主要阶段 Phase</text>
-
-  <rect x="22" y="110" width="26" height="18" rx="3" fill="#D4EDDA" stroke="#6B9B72"/>
-  <text x="52" y="123" font-size="10" fill="#333">子任务 Subtask</text>
-
-  <!-- ===== Phase 1 ===== -->
-  <rect x="150" y="10" width="380" height="56" rx="6" fill="#90D67C" stroke="#4A8C28" stroke-width="1.5"/>
-  <text x="340" y="36" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1A1A">Phase 1: Information Collection</text>
-  <text x="340" y="54" text-anchor="middle" font-size="11" fill="#333">收集期刊信息、稿件文件、作者/基金/审稿人资料</text>
-
-  <!-- CP-0 -->
-  <circle cx="340" cy="86" r="18" fill="#EF9F27" stroke="#854F0B" stroke-width="2.5"/>
-  <text x="340" y="87" text-anchor="middle" font-size="9" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-0</text>
-
-  <!-- ===== Phase 2 ===== -->
-  <rect x="150" y="110" width="380" height="56" rx="6" fill="#90D67C" stroke="#4A8C28" stroke-width="1.5"/>
-  <text x="340" y="136" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1A1A">Phase 2: Guideline Interpretation</text>
-  <text x="340" y="154" text-anchor="middle" font-size="11" fill="#333">用户手动提供投稿说明，AI辅助解读为checklist</text>
-
-  <!-- CP-1 -->
-  <circle cx="340" cy="186" r="18" fill="#EF9F27" stroke="#854F0B" stroke-width="2.5"/>
-  <text x="340" y="187" text-anchor="middle" font-size="9" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-1</text>
-
-  <!-- ===== Phase 3 ===== -->
-  <rect x="150" y="210" width="380" height="56" rx="6" fill="#90D67C" stroke="#4A8C28" stroke-width="1.5"/>
-  <text x="340" y="236" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1A1A">Phase 3: File Preprocessing</text>
-  <text x="340" y="254" text-anchor="middle" font-size="11" fill="#333">文件处理与参考文献格式转换</text>
-
-  <!-- Subtask 3.1 -->
-  <rect x="200" y="280" width="130" height="40" rx="4" fill="#D4EDDA" stroke="#6B9B72" stroke-width="1"/>
-  <text x="265" y="304" text-anchor="middle" font-size="10" fill="#333">3.1 文件处理</text>
-
-  <!-- Subtask 3.2 selector -->
-  <rect x="350" y="280" width="130" height="40" rx="4" fill="#FAC775" stroke="#A07510" stroke-width="1"/>
-  <text x="415" y="304" text-anchor="middle" font-size="10" fill="#333">3.2 格式转换选择</text>
-
-  <!-- Branches A/B -->
-  <rect x="200" y="335" width="120" height="30" rx="4" fill="#FAC775" stroke="#A07510" stroke-width="1"/>
-  <text x="260" y="354" text-anchor="middle" font-size="9" fill="#333">A. 用户自行转换</text>
-  <text x="260" y="365" text-anchor="middle" font-size="8" fill="#666">(Endnote/Zotero)</text>
-
-  <rect x="350" y="335" width="120" height="30" rx="4" fill="#FAC775" stroke="#A07510" stroke-width="1"/>
-  <text x="410" y="354" text-anchor="middle" font-size="9" fill="#333">B. AI直接转换</text>
-
-  <!-- CP-2 -->
-  <circle cx="340" cy="395" r="18" fill="#EF9F27" stroke="#854F0B" stroke-width="2.5"/>
-  <text x="340" y="396" text-anchor="middle" font-size="9" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-2</text>
-
-  <!-- ===== Phase 4 ===== -->
-  <rect x="150" y="420" width="380" height="56" rx="6" fill="#90D67C" stroke="#4A8C28" stroke-width="1.5"/>
-  <text x="340" y="446" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1A1A">Phase 4: Account Login / Registration</text>
-  <text x="340" y="464" text-anchor="middle" font-size="11" fill="#333">三种登录/注册路径</text>
-
-  <!-- Three account paths -->
-  <rect x="165" y="490" width="100" height="38" rx="4" fill="#FAC775" stroke="#A07510" stroke-width="1"/>
-  <text x="215" y="510" text-anchor="middle" font-size="9" fill="#333">A. 已有账号</text>
-  <text x="215" y="521" text-anchor="middle" font-size="8" fill="#666">用户名+密码</text>
-
-  <rect x="275" y="490" width="130" height="38" rx="4" fill="#FAC775" stroke="#A07510" stroke-width="1"/>
-  <text x="340" y="510" text-anchor="middle" font-size="9" fill="#333">B. 无账号+有ORCID</text>
-  <text x="340" y="521" text-anchor="middle" font-size="8" fill="#666">ORCID注册</text>
-
-  <rect x="415" y="490" width="130" height="38" rx="4" fill="#FAC775" stroke="#A07510" stroke-width="1"/>
-  <text x="480" y="510" text-anchor="middle" font-size="9" fill="#333">C. 无账号+无ORCID</text>
-  <text x="480" y="521" text-anchor="middle" font-size="8" fill="#666">邮箱注册</text>
-
-  <!-- CP-3 -->
-  <circle cx="340" cy="555" r="18" fill="#EF9F27" stroke="#854F0B" stroke-width="2.5"/>
-  <text x="340" y="556" text-anchor="middle" font-size="9" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-3</text>
-
-  <!-- ===== Phase 5 ===== -->
-  <rect x="150" y="580" width="380" height="56" rx="6" fill="#90D67C" stroke="#4A8C28" stroke-width="1.5"/>
-  <text x="340" y="606" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1A1A">Phase 5: Submission Form Filling</text>
-  <text x="340" y="624" text-anchor="middle" font-size="11" fill="#333">按照投稿系统实际步骤逐项填写</text>
-
-  <!-- Authors subtask -->
-  <rect x="200" y="650" width="130" height="36" rx="4" fill="#D4EDDA" stroke="#6B9B72" stroke-width="1"/>
-  <text x="265" y="672" text-anchor="middle" font-size="10" fill="#333">作者信息填写</text>
-
-  <!-- Build PDF + AI Check -->
-  <rect x="350" y="650" width="130" height="36" rx="4" fill="#D4EDDA" stroke="#6B9B72" stroke-width="1"/>
-  <text x="415" y="665" text-anchor="middle" font-size="10" fill="#333">Build PDF</text>
-  <text x="415" y="678" text-anchor="middle" font-size="9" fill="#666">+ AI Auto-Check</text>
-
-  <!-- CP-5 (final checkpoint) -->
-  <circle cx="340" cy="718" r="18" fill="#EF9F27" stroke="#854F0B" stroke-width="2.5"/>
-  <text x="340" y="719" text-anchor="middle" font-size="9" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-5</text>
-
-  <!-- Submit box -->
-  <rect x="240" y="755" width="200" height="44" rx="6" fill="#F5C4B3" stroke="#C47A52" stroke-width="1.5"/>
-  <text x="340" y="777" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A1A1A">User Confirms → Submit</text>
-  <text x="340" y="792" text-anchor="middle" font-size="10" fill="#555">用户确认后最终提交</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 800" width="680" height="800" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="680" height="800" fill="#F8F9FA"/>
+  <rect x="10" y="10" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#E0E0E0"/>
+  <text x="80" y="30" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Legend</text>
+  <circle cx="30" cy="48" r="10" fill="#EF9F27" stroke="#C78B1F" stroke-width="2"/>
+  <text x="48" y="52" font-size="10" fill="#444">Checkpoint</text>
+  <rect x="20" y="64" width="20" height="14" rx="3" fill="#5BC4A8" stroke="#3A9B7E"/>
+  <text x="48" y="76" font-size="10" fill="#444">Main Phase</text>
+  <rect x="20" y="84" width="20" height="14" rx="3" fill="#D4EDDA" stroke="#6B9B72"/>
+  <text x="48" y="96" font-size="10" fill="#444">Subtask</text>
+  <rect x="20" y="104" width="20" height="14" rx="3" fill="#FAC775" stroke="#C9A040"/>
+  <text x="48" y="116" font-size="10" fill="#444">Branch/Choice</text>
+  <rect x="190" y="10" width="320" height="56" rx="8" fill="#5BC4A8" stroke="#3A9B7E" stroke-width="2"/>
+  <text x="350" y="32" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFF">Phase 1</text>
+  <text x="350" y="54" text-anchor="middle" font-size="11" fill="#FFF">Information Collection</text>
+  <circle cx="570" cy="38" r="22" fill="#EF9F27" stroke="#C78B1F" stroke-width="3"/>
+  <text x="570" y="39" text-anchor="middle" font-size="10" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-0</text>
+  <rect x="190" y="90" width="320" height="56" rx="8" fill="#5BC4A8" stroke="#3A9B7E" stroke-width="2"/>
+  <text x="350" y="112" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFF">Phase 2</text>
+  <text x="350" y="134" text-anchor="middle" font-size="11" fill="#FFF">Guideline Interpretation</text>
+  <circle cx="570" cy="118" r="22" fill="#EF9F27" stroke="#C78B1F" stroke-width="3"/>
+  <text x="570" y="119" text-anchor="middle" font-size="10" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-1</text>
+  <rect x="190" y="170" width="320" height="56" rx="8" fill="#5BC4A8" stroke="#3A9B7E" stroke-width="2"/>
+  <text x="350" y="192" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFF">Phase 3</text>
+  <text x="350" y="214" text-anchor="middle" font-size="11" fill="#FFF">File Preprocessing</text>
+  <rect x="220" y="245" width="140" height="38" rx="6" fill="#D4EDDA" stroke="#6B9B72"/>
+  <text x="290" y="269" text-anchor="middle" font-size="10" fill="#333">Anonymization</text>
+  <rect x="220" y="293" width="140" height="38" rx="6" fill="#D4EDDA" stroke="#6B9B72"/>
+  <text x="290" y="317" text-anchor="middle" font-size="10" fill="#333">Reference Format</text>
+  <rect x="400" y="269" width="170" height="38" rx="6" fill="#FAC775" stroke="#C9A040"/>
+  <text x="485" y="288" text-anchor="middle" font-size="10" fill="#333">Reference Conversion</text>
+  <text x="485" y="302" text-anchor="middle" font-size="8" fill="#666">User choice: Manual or AI</text>
+  <circle cx="620" cy="288" r="22" fill="#EF9F27" stroke="#C78B1F" stroke-width="3"/>
+  <text x="620" y="289" text-anchor="middle" font-size="10" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-2</text>
+  <rect x="190" y="355" width="320" height="56" rx="8" fill="#5BC4A8" stroke="#3A9B7E" stroke-width="2"/>
+  <text x="350" y="377" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFF">Phase 4</text>
+  <text x="350" y="399" text-anchor="middle" font-size="11" fill="#FFF">Account Login / Registration</text>
+  <rect x="190" y="430" width="100" height="38" rx="6" fill="#FAC775" stroke="#C9A040"/>
+  <text x="240" y="449" text-anchor="middle" font-size="10" fill="#333">A. Existing</text>
+  <text x="240" y="461" text-anchor="middle" font-size="8" fill="#666">Account</text>
+  <rect x="300" y="430" width="110" height="38" rx="6" fill="#FAC775" stroke="#C9A040"/>
+  <text x="355" y="449" text-anchor="middle" font-size="10" fill="#333">B. No Account</text>
+  <text x="355" y="461" text-anchor="middle" font-size="8" fill="#666">+ ORCID</text>
+  <rect x="420" y="430" width="110" height="38" rx="6" fill="#FAC775" stroke="#C9A040"/>
+  <text x="475" y="449" text-anchor="middle" font-size="10" fill="#333">C. No Account</text>
+  <text x="475" y="461" text-anchor="middle" font-size="8" fill="#666">+ No ORCID</text>
+  <circle cx="350" cy="498" r="22" fill="#EF9F27" stroke="#C78B1F" stroke-width="3"/>
+  <text x="350" y="499" text-anchor="middle" font-size="10" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-3</text>
+  <rect x="190" y="525" width="320" height="56" rx="8" fill="#5BC4A8" stroke="#3A9B7E" stroke-width="2"/>
+  <text x="350" y="547" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFF">Phase 5</text>
+  <text x="350" y="569" text-anchor="middle" font-size="11" fill="#FFF">Submission Form Filling</text>
+  <rect x="230" y="600" width="130" height="38" rx="6" fill="#D4EDDA" stroke="#6B9B72"/>
+  <text x="295" y="624" text-anchor="middle" font-size="10" fill="#333">Author Info</text>
+  <rect x="370" y="600" width="130" height="38" rx="6" fill="#D4EDDA" stroke="#6B9B72"/>
+  <text x="435" y="618" text-anchor="middle" font-size="10" fill="#333">Build PDF</text>
+  <text x="435" y="630" text-anchor="middle" font-size="8" fill="#666">+ AI Auto-Check</text>
+  <circle cx="350" cy="668" r="22" fill="#EF9F27" stroke="#C78B1F" stroke-width="3"/>
+  <text x="350" y="669" text-anchor="middle" font-size="10" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-5</text>
+  <rect x="250" y="710" width="200" height="48" rx="8" fill="#F5C4B3" stroke="#C47A52" stroke-width="2"/>
+  <text x="350" y="734" text-anchor="middle" font-size="14" font-weight="bold" fill="#1A1A1A">User Confirms -&gt; Submit</text>
+  <text x="350" y="752" text-anchor="middle" font-size="11" fill="#666">Final submission</text>
 </svg>
