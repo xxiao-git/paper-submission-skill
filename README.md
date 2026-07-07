@@ -17,25 +17,9 @@
 
 ## Workflow Overview
 
-```
-Phase 1: Information Collection (CP-0)
-    ↓
-Phase 2: Guideline Interpretation (CP-1)
-    ↓
-Phase 3: File Preprocessing (CP-2)
-    ├── 3.1 File handling (anonymization if required)
-    └── 3.2 Reference format conversion
-    ↓
-Phase 4: Account Login / Registration (CP-3)
-    ├── Path A: Existing account → username + password
-    ├── Path B: No account + ORCID → register via ORCID
-    └── Path C: No account + no ORCID → register via email
-    ↓
-Phase 5: Submission Form Filling
-    ├── Follow actual system steps
-    ├── Author info completion
-    └── Build PDF + AI Auto-Check (CP-5) → User confirms → Submit
-```
+![Workflow Diagram](docs/workflow-diagram.svg)
+
+*Figure: Complete submission workflow with 5 phases, 6 checkpoints (CP-0 to CP-5), and mandatory human gate at final submission.*
 
 ## Prerequisites
 
