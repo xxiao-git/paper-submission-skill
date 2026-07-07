@@ -4,7 +4,7 @@
 
 [![WorkBuddy Skill](https://img.shields.io/badge/WorkBuddy-Skill-blue)](https://www.codebuddy.cn)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.1.0-orange)](https://github.com/xxiao-git/paper-submission-skill/releases)
+[![Version](https://img.shields.io/badge/Version-1.1.0-orange)](https://github.com/lunarcryxx/paper-submission-skill/releases)
 
 ## Features
 
@@ -17,9 +17,25 @@
 
 ## Workflow Overview
 
-![Workflow Diagram](docs/workflow-diagram.png)
-
-*Figure: Complete submission workflow with 5 phases and 6 checkpoints (CP-0 to CP-5). The skill pauses at each checkpoint for user review before proceeding.*
+```
+Phase 1: Information Collection (CP-0)
+    ↓
+Phase 2: Guideline Interpretation (CP-1)
+    ↓
+Phase 3: File Preprocessing (CP-2)
+    ├── 3.1 File handling (anonymization if required)
+    └── 3.2 Reference format conversion
+    ↓
+Phase 4: Account Login / Registration (CP-3)
+    ├── Path A: Existing account → username + password
+    ├── Path B: No account + ORCID → register via ORCID
+    └── Path C: No account + no ORCID → register via email
+    ↓
+Phase 5: Submission Form Filling
+    ├── Follow actual system steps
+    ├── Author info completion
+    └── Build PDF + AI Auto-Check (CP-5) → User confirms → Submit
+```
 
 ## Prerequisites
 
@@ -32,12 +48,12 @@
 
 ```bash
 # In WorkBuddy, tell your AI assistant:
-"Install skill from GitHub: https://github.com/xxiao-git/paper-submission-skill"
+"Install skill from GitHub: https://github.com/lunarcryxx/paper-submission-skill"
 ```
 
 ### Option 2: Manual Installation
 
-1. Download the latest release: [paper-submission-v1.1.0.zip](https://github.com/xxiao-git/paper-submission-skill/releases/tag/v1.1.0)
+1. Download the latest release: [paper-submission-v1.1.0.zip](https://github.com/lunarcryxx/paper-submission-skill/releases/tag/v1.1.0)
 2. In WorkBuddy, tell your AI assistant:
    ```
    "Install the skill from this zip file: /path/to/paper-submission-v1.1.0.zip"
@@ -46,7 +62,7 @@
 ### Option 3: Clone and Install Locally
 
 ```bash
-git clone https://github.com/xxiao-git/paper-submission-skill.git
+git clone https://github.com/lunarcryxx/paper-submission-skill.git
 # In WorkBuddy:
 "Install the skill from this directory: ./paper-submission-skill"
 ```
@@ -187,13 +203,14 @@ A: Yes. Re-download the latest release or pull from this repository, then reinst
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v1.1.1 | 2026-07-07 | ⛔ 强制人工检查规则：AI 禁止点击最终提交按钮，必须生成完整审核报告后由用户手动提交；在 SKILL.md 关键位置增加 3 处强制阻断规则 |
 | v1.1.0 | 2026-07-03 | Merged CP-5/CP-6 into unified CP-5 with AI auto-checklist; reviewer template split Full Name into First/Family Name; removed Publication Name column; added Initialization Check for playwright-cli dependency |
 | v1.0.0 | 2026-07-02 | Initial release: 5-phase workflow, 7 checkpoints, bilingual templates, Editorial Manager guide |
 
 ## Contributing
 
 Contributions welcome! Please open an issue or pull request at:
-https://github.com/xxiao-git/paper-submission-skill
+https://github.com/lunarcryxx/paper-submission-skill
 
 ## License
 
