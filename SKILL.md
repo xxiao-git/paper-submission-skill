@@ -20,6 +20,36 @@ End-to-end academic manuscript submission workflow automation via browser (playw
 
 This skill automates the complete paper submission process through 5 phases with 6 human checkpoints. It supports multiple submission systems (Editorial Manager, ScholarOne, Frontiers, etc.) and adapts to each journal's specific requirements.
 
+---
+
+## ⛔ CRITICAL RULE: FINAL SUBMIT BUTTON — AI NEVER CLICKS
+
+**The AI MUST NEVER click any of the following buttons:**
+
+- "Run checks and submit"
+- "Submit"
+- "Approve submission"
+- "Confirm submission"
+- "Build PDF for my approval"
+- "Submit manuscript"
+- Any button whose action results in the manuscript being formally submitted to the journal
+
+**This is an absolute, non-negotiable rule. No exceptions. No excuses.**
+
+**What the AI MUST do at the final step:**
+
+1. Navigate to the Review/Summary page
+2. Take a full-page screenshot
+3. Generate a complete checklist report covering ALL filled information (Files, Details, Authors, Declarations, Funding, Terms)
+4. Present the report to the user with this exact message:
+   - "以下是投稿最终审核报告。请人工检查以上所有信息。确认无误后，**请您自己点击 'Run checks and submit' 按钮完成提交。我不会代您点击提交按钮。**"
+
+5. STOP. Do not proceed further. Do not click anything else.
+
+**The human MUST click the final submit button themselves.**
+
+---
+
 ## Prerequisites
 
 - **playwright-cli** skill must be available for browser automation
@@ -223,7 +253,9 @@ Based on journal requirements:
 
 **Checkpoint CP-4:** After author information is filled, show author list and order to user for confirmation.
 
-**Checkpoint CP-5:** After PDF generation, perform the following:
+**Checkpoint CP-5 (FINAL — MANDATORY HUMAN GATE):**
+
+**⛔ AI MUST NOT click any submit/approve/confirm button. The human must do it.**
 
 1. **AI auto-check using submission guideline checklist** (from Phase 2):
    - Verify title, abstract completeness
@@ -233,12 +265,18 @@ Based on journal requirements:
    - Check anonymization completeness (if required)
    - Check any journal-specific requirements
 
-2. **Present to user:**
+2. **Generate final review report** including:
+   - Full-page screenshot of the Review/Summary page
    - Auto-check results (pass/fail for each item)
-   - PDF preview/screenshot
-   - Summary of all filled information
+   - Complete summary of ALL filled information across all sections (Files, Details, Authors, Declarations, Funding, Terms)
 
-3. **Wait for explicit user confirmation before clicking the final "Submit" button.**
+3. **Present the report to user** with this exact closing message:
+
+   > "以下是投稿最终审核报告。请人工检查以上所有信息。
+   > 确认无误后，**请您自己点击页面上的提交按钮完成投稿。**
+   > 我不会代您点击提交按钮。"
+
+4. **STOP HERE.** Do NOT click the submit button. Do NOT navigate further. End the task.
 
 ---
 
@@ -269,12 +307,13 @@ At each checkpoint (CP-0 through CP-5):
 
 ## Important Notes
 
-1. **Never submit without user confirmation** - Always wait for explicit approval at CP-5
-2. **Adapt to actual system** - Phase 5 follows the real submission system's flow, not a fixed template
-3. **Preserve user data** - Keep all collected information available for filling forms
-4. **Take screenshots** - Document each major step for user review
-5. **Handle variations** - Different journals have different requirements, always check guidelines first
-6. **Reference conversion choice** - Always ask user whether they want to convert references themselves or have AI do it
+1. **⛔ NEVER CLICK SUBMIT** — The AI is FORBIDDEN from clicking any final submit/approve/confirm button. The human user must click it themselves after reviewing the CP-5 report.
+2. **Adapt to actual system** — Phase 5 follows the real submission system's flow, not a fixed template
+3. **Preserve user data** — Keep all collected information available for filling forms
+4. **Take screenshots** — Document each major step for user review
+5. **Handle variations** — Different journals have different requirements, always check guidelines first
+6. **Reference conversion choice** — Always ask user whether they want to convert references themselves or have AI do it
+7. **Checkpoint discipline** — Every checkpoint (CP-0 through CP-5) MUST pause and wait for user response. Do not skip or rush through checkpoints.
 
 ---
 
