@@ -203,7 +203,7 @@ A: Yes. Re-download the latest release or pull from this repository, then reinst
 
 | Version | Date | Changes |
 |---------|------|---------|
-| v1.1.1 | 2026-07-07 | ⛔ 强制人工检查规则：AI 禁止点击最终提交按钮，必须生成完整审核报告后由用户手动提交；在 SKILL.md 关键位置增加 3 处强制阻断规则 |
+| v1.1.1 | 2026-07-07 | ⛔ Mandatory human gate: AI is FORBIDDEN from clicking the final submit button; must generate a full review report and wait for user to submit manually; added 3 enforcement points across SKILL.md |
 | v1.1.0 | 2026-07-03 | Merged CP-5/CP-6 into unified CP-5 with AI auto-checklist; reviewer template split Full Name into First/Family Name; removed Publication Name column; added Initialization Check for playwright-cli dependency |
 | v1.0.0 | 2026-07-02 | Initial release: 5-phase workflow, 7 checkpoints, bilingual templates, Editorial Manager guide |
 
