@@ -1,62 +1,143 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 800" width="680" height="800" font-family="Segoe UI, Arial, sans-serif">
-  <rect width="680" height="800" fill="#F8F9FA"/>
-  <rect x="10" y="10" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#E0E0E0"/>
-  <text x="80" y="30" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Legend</text>
-  <circle cx="30" cy="48" r="10" fill="#EF9F27" stroke="#C78B1F" stroke-width="2"/>
-  <text x="48" y="52" font-size="10" fill="#444">Checkpoint</text>
-  <rect x="20" y="64" width="20" height="14" rx="3" fill="#5BC4A8" stroke="#3A9B7E"/>
-  <text x="48" y="76" font-size="10" fill="#444">Main Phase</text>
-  <rect x="20" y="84" width="20" height="14" rx="3" fill="#D4EDDA" stroke="#6B9B72"/>
-  <text x="48" y="96" font-size="10" fill="#444">Subtask</text>
-  <rect x="20" y="104" width="20" height="14" rx="3" fill="#FAC775" stroke="#C9A040"/>
-  <text x="48" y="116" font-size="10" fill="#444">Branch/Choice</text>
-  <rect x="190" y="10" width="320" height="56" rx="8" fill="#5BC4A8" stroke="#3A9B7E" stroke-width="2"/>
-  <text x="350" y="32" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFF">Phase 1</text>
-  <text x="350" y="54" text-anchor="middle" font-size="11" fill="#FFF">Information Collection</text>
-  <circle cx="570" cy="38" r="22" fill="#EF9F27" stroke="#C78B1F" stroke-width="3"/>
-  <text x="570" y="39" text-anchor="middle" font-size="10" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-0</text>
-  <rect x="190" y="90" width="320" height="56" rx="8" fill="#5BC4A8" stroke="#3A9B7E" stroke-width="2"/>
-  <text x="350" y="112" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFF">Phase 2</text>
-  <text x="350" y="134" text-anchor="middle" font-size="11" fill="#FFF">Guideline Interpretation</text>
-  <circle cx="570" cy="118" r="22" fill="#EF9F27" stroke="#C78B1F" stroke-width="3"/>
-  <text x="570" y="119" text-anchor="middle" font-size="10" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-1</text>
-  <rect x="190" y="170" width="320" height="56" rx="8" fill="#5BC4A8" stroke="#3A9B7E" stroke-width="2"/>
-  <text x="350" y="192" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFF">Phase 3</text>
-  <text x="350" y="214" text-anchor="middle" font-size="11" fill="#FFF">File Preprocessing</text>
-  <rect x="220" y="245" width="140" height="38" rx="6" fill="#D4EDDA" stroke="#6B9B72"/>
-  <text x="290" y="269" text-anchor="middle" font-size="10" fill="#333">Anonymization</text>
-  <rect x="220" y="293" width="140" height="38" rx="6" fill="#D4EDDA" stroke="#6B9B72"/>
-  <text x="290" y="317" text-anchor="middle" font-size="10" fill="#333">Reference Format</text>
-  <rect x="400" y="269" width="170" height="38" rx="6" fill="#FAC775" stroke="#C9A040"/>
-  <text x="485" y="288" text-anchor="middle" font-size="10" fill="#333">Reference Conversion</text>
-  <text x="485" y="302" text-anchor="middle" font-size="8" fill="#666">User choice: Manual or AI</text>
-  <circle cx="620" cy="288" r="22" fill="#EF9F27" stroke="#C78B1F" stroke-width="3"/>
-  <text x="620" y="289" text-anchor="middle" font-size="10" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-2</text>
-  <rect x="190" y="355" width="320" height="56" rx="8" fill="#5BC4A8" stroke="#3A9B7E" stroke-width="2"/>
-  <text x="350" y="377" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFF">Phase 4</text>
-  <text x="350" y="399" text-anchor="middle" font-size="11" fill="#FFF">Account Login / Registration</text>
-  <rect x="190" y="430" width="100" height="38" rx="6" fill="#FAC775" stroke="#C9A040"/>
-  <text x="240" y="449" text-anchor="middle" font-size="10" fill="#333">A. Existing</text>
-  <text x="240" y="461" text-anchor="middle" font-size="8" fill="#666">Account</text>
-  <rect x="300" y="430" width="110" height="38" rx="6" fill="#FAC775" stroke="#C9A040"/>
-  <text x="355" y="449" text-anchor="middle" font-size="10" fill="#333">B. No Account</text>
-  <text x="355" y="461" text-anchor="middle" font-size="8" fill="#666">+ ORCID</text>
-  <rect x="420" y="430" width="110" height="38" rx="6" fill="#FAC775" stroke="#C9A040"/>
-  <text x="475" y="449" text-anchor="middle" font-size="10" fill="#333">C. No Account</text>
-  <text x="475" y="461" text-anchor="middle" font-size="8" fill="#666">+ No ORCID</text>
-  <circle cx="350" cy="498" r="22" fill="#EF9F27" stroke="#C78B1F" stroke-width="3"/>
-  <text x="350" y="499" text-anchor="middle" font-size="10" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-3</text>
-  <rect x="190" y="525" width="320" height="56" rx="8" fill="#5BC4A8" stroke="#3A9B7E" stroke-width="2"/>
-  <text x="350" y="547" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFF">Phase 5</text>
-  <text x="350" y="569" text-anchor="middle" font-size="11" fill="#FFF">Submission Form Filling</text>
-  <rect x="230" y="600" width="130" height="38" rx="6" fill="#D4EDDA" stroke="#6B9B72"/>
-  <text x="295" y="624" text-anchor="middle" font-size="10" fill="#333">Author Info</text>
-  <rect x="370" y="600" width="130" height="38" rx="6" fill="#D4EDDA" stroke="#6B9B72"/>
-  <text x="435" y="618" text-anchor="middle" font-size="10" fill="#333">Build PDF</text>
-  <text x="435" y="630" text-anchor="middle" font-size="8" fill="#666">+ AI Auto-Check</text>
-  <circle cx="350" cy="668" r="22" fill="#EF9F27" stroke="#C78B1F" stroke-width="3"/>
-  <text x="350" y="669" text-anchor="middle" font-size="10" font-weight="bold" fill="#FFF" dominant-baseline="central">CP-5</text>
-  <rect x="250" y="710" width="200" height="48" rx="8" fill="#F5C4B3" stroke="#C47A52" stroke-width="2"/>
-  <text x="350" y="734" text-anchor="middle" font-size="14" font-weight="bold" fill="#1A1A1A">User Confirms -&gt; Submit</text>
-  <text x="350" y="752" text-anchor="middle" font-size="11" fill="#666">Final submission</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 740" width="100%" role="img">
+<title>paper-submission skill workflow diagram</title>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<style>
+  .phase { font: 500 13px var(--font-sans, system-ui); fill: #2C2C2A; }
+  .cp { font: 400 12px var(--font-sans, system-ui); fill: #2C2C2A; }
+  .stop { font: 500 13px var(--font-sans, system-ui); fill: #FFFFFF; }
+  .branch { font: 400 11px var(--font-sans, system-ui); fill: #5F5E5A; }
+</style>
+
+<text x="340" y="28" text-anchor="middle" class="phase" style="font-size:15px">paper-submission workflow</text>
+
+<g>
+  <rect x="180" y="50" width="320" height="40" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="340" y="70" text-anchor="middle" dominant-baseline="central" class="phase">Phase 1: information collection</text>
+</g>
+
+<g>
+  <rect x="520" y="54" width="100" height="32" rx="16" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="570" y="70" text-anchor="middle" dominant-baseline="central" class="cp">CP-0: confirm</text>
+</g>
+<line x1="500" y1="70" x2="520" y2="70" stroke="#534AB7" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+<g>
+  <rect x="180" y="110" width="320" height="40" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="340" y="130" text-anchor="middle" dominant-baseline="central" class="phase">Phase 2: guideline interpretation</text>
+</g>
+
+<g>
+  <rect x="520" y="114" width="100" height="32" rx="16" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="570" y="130" text-anchor="middle" dominant-baseline="central" class="cp">CP-1: confirm</text>
+</g>
+<line x1="500" y1="130" x2="520" y2="130" stroke="#534AB7" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+<line x1="340" y1="90" x2="340" y2="110" stroke="#444441" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+<g>
+  <rect x="180" y="170" width="320" height="40" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="340" y="190" text-anchor="middle" dominant-baseline="central" class="phase">Phase 3: file preprocessing</text>
+</g>
+
+<g>
+  <rect x="520" y="174" width="100" height="32" rx="16" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="570" y="190" text-anchor="middle" dominant-baseline="central" class="cp">CP-2: confirm</text>
+</g>
+<line x1="500" y1="190" x2="520" y2="190" stroke="#534AB7" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+<line x1="340" y1="150" x2="340" y2="170" stroke="#444441" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+<g>
+  <rect x="180" y="230" width="320" height="40" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="340" y="250" text-anchor="middle" dominant-baseline="central" class="phase">Phase 4: account login / registration</text>
+</g>
+
+<g>
+  <rect x="520" y="234" width="100" height="32" rx="16" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="570" y="250" text-anchor="middle" dominant-baseline="central" class="cp">CP-3: confirm</text>
+</g>
+<line x1="500" y1="250" x2="520" y2="250" stroke="#534AB7" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+<line x1="340" y1="210" x2="340" y2="230" stroke="#444441" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+<text x="340" y="284" text-anchor="middle" class="branch">A: existing account / B: ORCID / C: email register</text>
+
+<g>
+  <rect x="180" y="300" width="320" height="40" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="340" y="320" text-anchor="middle" dominant-baseline="central" class="phase">Phase 5: system form filling</text>
+</g>
+
+<line x1="340" y1="292" x2="340" y2="300" stroke="#444441" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+<g>
+  <rect x="220" y="355" width="240" height="32" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+  <text x="340" y="371" text-anchor="middle" dominant-baseline="central" class="cp">Step 1: files</text>
+</g>
+
+<g>
+  <rect x="520" y="355" width="100" height="32" rx="16" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="570" y="371" text-anchor="middle" dominant-baseline="central" class="cp">CP-4: confirm</text>
+</g>
+<line x1="460" y1="371" x2="520" y2="371" stroke="#BA7517" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+<g>
+  <rect x="220" y="400" width="240" height="32" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+  <text x="340" y="416" text-anchor="middle" dominant-baseline="central" class="cp">Step 2: details</text>
+</g>
+
+<g>
+  <rect x="220" y="445" width="240" height="32" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+  <text x="340" y="461" text-anchor="middle" dominant-baseline="central" class="cp">Step 3: authors</text>
+</g>
+
+<g>
+  <rect x="220" y="490" width="240" height="32" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+  <text x="340" y="506" text-anchor="middle" dominant-baseline="central" class="cp">Step 4: declarations</text>
+</g>
+
+<g>
+  <rect x="220" y="535" width="240" height="32" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+  <text x="340" y="551" text-anchor="middle" dominant-baseline="central" class="cp">Step 5: review</text>
+</g>
+
+<g>
+  <rect x="520" y="535" width="100" height="32" rx="16" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="570" y="551" text-anchor="middle" dominant-baseline="central" class="cp">CP-5: review</text>
+</g>
+<line x1="460" y1="551" x2="520" y2="551" stroke="#BA7517" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+<line x1="340" y1="387" x2="340" y2="400" stroke="#444441" stroke-width="0.5" marker-end="url(#arrow)"/>
+<line x1="340" y1="432" x2="340" y2="445" stroke="#444441" stroke-width="0.5" marker-end="url(#arrow)"/>
+<line x1="340" y1="477" x2="340" y2="490" stroke="#444441" stroke-width="0.5" marker-end="url(#arrow)"/>
+<line x1="340" y1="522" x2="340" y2="535" stroke="#444441" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+<line x1="340" y1="340" x2="340" y2="355" stroke="#444441" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+<g>
+  <rect x="120" y="590" width="440" height="48" rx="8" fill="#E24B4A" stroke="#A32D2D" stroke-width="0.5"/>
+  <text x="340" y="608" text-anchor="middle" dominant-baseline="central" class="stop">human review report generated — STOP here</text>
+  <text x="340" y="628" text-anchor="middle" dominant-baseline="central" style="font:400 11px var(--font-sans,system-ui);fill:#FCEBEB">user clicks submit button manually</text>
+</g>
+
+<line x1="340" y1="567" x2="340" y2="590" stroke="#444441" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+<g>
+  <rect x="40" y="660" width="12" height="12" rx="3" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="56" y="666" text-anchor="start" dominant-baseline="central" style="font:400 11px var(--font-sans,system-ui);fill:#5F5E5A">phase</text>
+
+  <rect x="40" y="678" width="12" height="12" rx="3" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+  <text x="56" y="684" text-anchor="start" dominant-baseline="central" style="font:400 11px var(--font-sans,system-ui);fill:#5F5E5A">sub-step</text>
+
+  <rect x="40" y="696" width="12" height="12" rx="6" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="56" y="702" text-anchor="start" dominant-baseline="central" style="font:400 11px var(--font-sans,system-ui);fill:#5F5E5A">checkpoint (user confirm)</text>
+
+  <rect x="40" y="714" width="12" height="12" rx="3" fill="#E24B4A" stroke="#A32D2D" stroke-width="0.5"/>
+  <text x="56" y="720" text-anchor="start" dominant-baseline="central" style="font:400 11px var(--font-sans,system-ui);fill:#5F5E5A">AI stop — human action required</text>
+</g>
+
 </svg>
