@@ -137,7 +137,7 @@ At each checkpoint, you can:
 |--------|-------------|---------|
 | Sequence Number | Order | 1 |
 | Funder Name (English) | Full name in English | National Natural Science Foundation of China |
-| Grant Number | Award/grant number | 62572389 |
+| Grant Number | Award/grant number | 66668888 |
 | Grant Recipient | Must be an author of this paper | San Zhang |
 
 ### Reviewer Recommendation (`assets/reviewer_info_template.xlsx`)
